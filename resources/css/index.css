@@ -1,0 +1,445 @@
+/* Universal */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    z-index: 10;
+    display: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.contain {
+    width: 90%;
+    margin: auto;
+}
+
+a {
+    color: #262626;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Nav */
+.main-nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0 20px 0;
+    font: 13px;
+    justify-content: space-between;
+}
+
+.main-nav img {
+    height: 25px;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav .main-menu a {
+    padding-bottom: 1.5px;
+}
+
+.main-nav li {
+    margin-right: 20px;
+}
+
+.main-nav .main-menu li a:hover {
+    border-bottom: 2px solid rgb(62, 203, 247);
+}
+
+.main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Showcase */
+header.showcase {
+    margin: auto;
+    height: 400px;
+    background: url(../images/header.webp) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-left: 5%;
+    height: auto;
+    max-width: 500px;
+    line-height: 1.15;
+}
+
+header .description h2 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+header .description h2,
+header .description p {
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    transition: opacity ease-in 0.5s;
+    margin-top: 5px;
+}
+
+.btn:hover {
+    opacity: 0.75;
+}
+
+/* Features */
+.home-cards {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.home-cards div {
+    cursor: pointer;
+    /* display: grid; */
+}
+
+.home-cards img {
+    width: 100%;
+}
+
+.home-cards h3,
+.home-cards p {
+    align-self: start;
+}
+
+/* .home-cards #link {
+    align-self: end;
+} */
+
+.home-cards a {
+    padding-bottom: 0%;
+    padding: 10px 0 2px 0;
+    color: #0067b8;
+    font-weight: bold;
+}
+
+.home-cards a:hover i {
+    margin-left: 5px;
+}
+
+/* Xbox */
+.xbox-banner {
+    margin: 25px 0 25px 0;
+    background: url(../images/middleBanner.jpg) no-repeat center center/cover;
+    height: 475px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.xbox-banner .description {
+    width: 50%;
+}
+
+.xbox-banner .description,
+.xbox-banner a {
+    color: white;
+}
+
+.xbox-banner .description h2 {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.xbox-banner h2,
+.xbox-banner p {
+    margin-bottom: 15px;
+}
+
+.xbox-banner p {
+    line-height: 1.5;
+}
+
+.xbox-banner button {
+    color: black;
+    background-color: white;
+    padding: 15px 25px;
+    margin: 0;
+    margin-right: 50px;
+    margin-top: 5px;
+}
+
+.xbox-banner .text {
+    transition: border-bottom 0.25s;
+    font-weight: 500;
+}
+
+.xbox-banner .text:hover {
+    border-bottom: 2px solid white;
+}
+
+.xbox-banner a i {
+    transition: margin-left linear 0.25s;
+}
+
+.xbox-banner a:hover i {
+    margin-left: 2.5px;
+}
+
+/* Business */
+.business .business-text h2 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.business .home-cards .link {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.business .home-cards a {
+    margin-right: 10px;
+}
+
+/* Womens */
+.xbox-banner.womens {
+    background: url(../images/bottomBanner.webp) no-repeat center center/cover;
+}
+
+.xbox-banner.womens .description {
+    width: 40%;
+}
+
+.xbox-banner.womens .description h2 {
+    font-weight: 400;
+}
+
+/* socials */
+.socials .container {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.socials .container h5 {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.socials .container img {
+    height: 100%;
+    margin-left: 20px;
+    transition: opacity 0.25s ease-out;
+}
+
+.socials .container img:hover {
+    opacity: 0.5;
+}
+
+/* Links */
+.links {
+    background-color: #f2f2f2;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.links .contain {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    
+}
+
+.links .contain ul li {
+    margin-bottom: 10px;
+}
+
+/* footer */
+
+footer {
+    background: #f2f2f2;
+    color: #616161;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+footer .contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .contain div {
+    display: flex;
+    align-items: center;
+    
+}
+
+footer .contain i {
+    margin-right: 10px;
+}
+
+footer .contain ul {   
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .contain ul li {
+    margin-left: 20px;
+    
+}
+
+/* Media Queries */
+
+@media(max-width: 1000px) {
+    .home-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .xbox-banner .xbox p {
+        display: none;
+    }
+
+    .xbox-banner h2 {
+        margin-bottom: 35px;
+    }
+
+    .xbox-banner.womens .description {
+        width: 100%;
+    }
+
+    .links .contain {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-nav ul.main-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        transform: translateX(-500px);
+        border: 1px solid #ccc ;
+        opacity: 0.9;
+        padding: 30px;
+        transition: transform 0.8s ease-in-out;
+    }
+
+    .main-nav ul.main-menu.show {
+        transform: translateX(-20px);
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-btn:hover {
+        opacity: 0.5;
+    }
+
+    .main-nav ul.right-menu {
+        margin-right: 50px;
+    }
+
+    .main-nav ul.main-menu li {
+        padding: 10px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 700px) {
+
+    .main-nav ul.right-menu {
+        margin-right: 50px;
+    }
+    .home-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .links .contain {
+        grid-template-columns: 1fr;
+    }
+
+    .main-nav ul.main-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        transform: translateX(-500px);
+        border: 1px solid #ccc ;
+        opacity: 0.9;
+        padding: 30px;
+        transition: transform 0.8s ease-in-out;
+    }
+
+    .main-nav ul.main-menu.show {
+        transform: translateX(-20px);
+    }
+
+    .main-nav .main-menu li a:hover {
+        border-bottom: none;
+    }
+
+    .main-nav ul.main-menu li {
+        padding: 10px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+
+    .main-nav ul.main-menu li:last-child {
+        border-bottom: 0;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-btn:hover {
+        opacity: 0.5;
+    }
+}
+    
+
+
+
+
+
+
+
+
